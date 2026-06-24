@@ -20,7 +20,7 @@ module Post_Processing_Module
 export Post_Processing , Final_Result
 
 using LinearAlgebra
-using FFTW, DSP
+using FFTA, DSP
 using Polynomials , NoiseRobustDifferentiation
 
 #  Analytical Signal Function

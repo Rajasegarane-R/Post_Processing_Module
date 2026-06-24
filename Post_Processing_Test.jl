@@ -1,5 +1,5 @@
 include("Post_Processing_Module.jl")
-using LinearAlgebra , FFTW
+using LinearAlgebra , FFTA
 using GLMakie , LaTeXStrings , CairoMakie
 using Random , Distributions
 using .Post_Processing_Module
