@@ -31,7 +31,7 @@ Using `tvdiff`, we get :
 
 | Package | Purpose |
 |---|---|
-| `FFTW.jl` | Fast Fourier Transform to compute Hilbert transform|
+| `FFTA.jl` | Fast Fourier Transform to compute Hilbert transform|
 | `DSP.jl` | Butterworth filter design and zero-phase filtering |
 | `Polynomials.jl` | Polynomial fitting for edge padding |
 | `NoiseRobustDifferentiation.jl` | Total-variation regularised differentiation (`tvdiff`) |
@@ -46,7 +46,7 @@ Using `tvdiff`, we get :
 
 ```julia
 import Pkg
-Pkg.add(["FFTW", "DSP", "Polynomials", "NoiseRobustDifferentiation"])
+Pkg.add(["FFTA", "DSP", "Polynomials", "NoiseRobustDifferentiation"])
 ```
 Alternatively, if you have the `Project.toml` from this repository:
 ```julia
