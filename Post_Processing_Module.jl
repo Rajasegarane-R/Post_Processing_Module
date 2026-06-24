@@ -19,7 +19,6 @@ module Post_Processing_Module
 
 export Post_Processing , Final_Result
 
-using LinearAlgebra
 using FFTA, DSP
 using Polynomials , NoiseRobustDifferentiation
 

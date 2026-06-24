@@ -1,7 +1,7 @@
 include("Post_Processing_Module.jl")
-using LinearAlgebra , FFTA
-using GLMakie , LaTeXStrings , CairoMakie
-using Random , Distributions
+using FFTA
+using GLMakie , LaTeXStrings 
+using Distributions
 using .Post_Processing_Module
 
 GLMakie.closeall() ;
@@ -36,7 +36,6 @@ t_original = 0:dt:100 ;
 f_s = 1/dt ;  N = length(t_original);
 omega = (0:fld(N,2))*((2*pi*f_s)/N) ;
 
-Random.seed!(4)
 N_sig = 2.5e-03  ;
 x_original = (a_1.*exp.(-zeta_1.*omega_1.*t_original).*cos.(omega_1.*t_original)) .+ (a_2.*exp.(-zeta_2.*omega_2.*t_original).*cos.(omega_2.*t_original)) .+ rand(Normal(0,N_sig),length(t_original))  ;
 
