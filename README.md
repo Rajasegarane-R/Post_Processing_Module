@@ -141,7 +141,7 @@ The example script requires these additional packages on top of the core depende
 
 ```julia
 import Pkg
-Pkg.add(["GLMakie", "CairoMakie", "LaTeXStrings", "Distributions"])
+Pkg.add(["GLMakie", "CairoMakie", "LaTeXStrings", "Distributions","Random","LinearAlgebra"])
 ```
 Alternatively, if you have the `Project.toml` file from this repository, it is already in use.
 
